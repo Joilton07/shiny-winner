@@ -1,0 +1,8 @@
+{
+    "name": "api-covid/apis-de-terceiro",
+    "description": "API Covid",
+    "require": {
+        "slim/slim": "^3"
+    }
+
+}

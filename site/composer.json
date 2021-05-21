@@ -1,0 +1,9 @@
+{
+    "name": "site/pdwiv",
+    "description": "TDE 4 - API Gateway para requisições HTTP a APIs de terceiros",
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "controller"
+        }
+    }
+}

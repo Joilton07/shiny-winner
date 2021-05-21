@@ -8,9 +8,9 @@
 </style>
 
 <!-- Resources -->
-<script src="./core.js"></script>
-<script src="./charts.js"></script>
-<script src="./animated.js"></script>
+<script src="../viewAm/core.js"></script>
+<script src="../viewAm/charts.js"></script>
+<script src="../viewAm/animated.js"></script>
 
 <!-- Chart code -->
 <script>
@@ -24,14 +24,21 @@ var chart = am4core.create("chartdiv", am4charts.XYChart);
 
 var data = [];
 var value = 50;
-for(var i = 0; i < 300; i++){
-  var date = new Date();
-  date.setHours(0,0,0,0);
-  date.setDate(i);
-  value -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
-  data.push({date:date, value: value});
-}
+<?php 
+  // var_dump($respApi[0]["Date"]);
+  foreach ($respApi as $key => $value) : 
+?>
+// for(var i = 0; i < 10; i++){
+//   var date = new Date();
+//   date.setHours(0,0,0,0);
+//   date.setDate(i);
+//   value -= Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
+  data.push({date:'<?= $value["Date"]?>', value: <?= $value["Active"]?>});
+// }
 
+<?php 
+ endforeach;
+?>
 chart.data = data;
 
 // Create axes
@@ -60,3 +67,8 @@ chart.scrollbarX = new am4core.Scrollbar();
 
 <!-- HTML -->
 <div id="chartdiv"></div>
+<h3>
+  <?php 
+    echo $respApi[0]["Country"]."<br>Casos Ativo no Pais";
+  ?>
+</h3>

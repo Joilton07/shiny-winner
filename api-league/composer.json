@@ -1,8 +1,7 @@
 {
-    "name": "apis-de-terceiro/pdwiv",
+    "name": "api-league/pdwiv",
     "description": "TDE 4 - API Gateway para requisições HTTP a APIs de terceiros",
     "require": {
         "slim/slim": "^3"
     }
-
 }

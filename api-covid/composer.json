@@ -1,0 +1,8 @@
+{
+    "name": "apis-de-terceiro/pdwiv",
+    "description": "TDE 4 - API Gateway para requisições HTTP a APIs de terceiros",
+    "require": {
+        "slim/slim": "^3"
+    }
+
+}

@@ -45,11 +45,11 @@
 
         <div class="form-floating">
           <input type="date" class="form-control" id="" name="data1">
-          <label for="floatingInput">Email address</label>
+          <label for="floatingInput"></label>
         </div>
         <div class="form-floating">
           <input type="date" class="form-control" id="" name="data2">
-          <label for="floatingInput">Email address</label>
+          <label for="floatingInput"></label>
         </div>
         <div class="form-floating">
           <select name="pais" id="" class="form-control">

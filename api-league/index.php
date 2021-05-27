@@ -23,7 +23,7 @@
     $app->post("/league", function(Request $req, Response $res, array $args){
         $dadosReq = json_decode($req->getBody()->getContents(), true);
 
-        $urlLeague = "https://br1.api.riotgames.com/lol/league-exp/v4/entries/".$dadosReq["Fila"]."/".$dadosReq["Tier"]."/".$dadosReq["Divisao"]."?page=1&api_key=RGAPI-14fc1efa-fb24-4a50-8ea1-2146768d7c7f";
+        $urlLeague = "https://br1.api.riotgames.com/lol/league-exp/v4/entries/".$dadosReq["fila"]."/".$dadosReq["tier"]."/".$dadosReq["divisao"]."?page=1&api_key=RGAPI-0a80d296-7229-4a31-a0f5-d6fcf627c33a";
 
         $dadosLeague = get($urlLeague);
 

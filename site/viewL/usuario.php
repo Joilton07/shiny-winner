@@ -189,7 +189,7 @@
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <?php foreach ($apiL as $key => $value) : ?>
             <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg img-league" style="background-image: url('../utils/img/player-guide-map-1440-32575baa2f8d2b2bfd5cfd07e11d1361.png'); background-position: center;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../utils/img/player-guide-map-1440-32575baa2f8d2b2bfd5cfd07e11d1361.png'); background-position: center;">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                   <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><?=$value["summonerName"]?></h2>
                   <ul class="d-flex list-unstyled mt-auto">

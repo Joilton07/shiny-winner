@@ -38,7 +38,7 @@
   <body class="text-center">
     
     <main class="form-signin">
-      <button class="troca-de-Api" type="button"><a href="../view/index.php">Troca para Api-covid</a></button>
+      <button class="troca-de-Api" type="button"><a href="../viewD/index.php">Troca para Api-covid</a></button>
       <form action="../controller/infL.php" method="post">
         <img class="img-League" src="../utils/img/unnamed.jpg" alt="" width="400" height="316,68">
         <h1 class="h3 mb-3 fw-normal">Escolha a Divisão do league of legends: </h1>
